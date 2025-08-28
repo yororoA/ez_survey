@@ -1,0 +1,23 @@
+.entire {
+  // 最外层父路由
+  background-color: var(--blue-600);
+  position: relative;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 5vh 95vh;
+  align-items: center;
+
+  .useless {
+    // 父路由中固定显示 头导航栏
+    font-size: 15rem;
+    display: flex;
+    justify-content: flex-end;
+
+    .displayUseless {
+      width: 20vw;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row-reverse;
+    }
+  }
+}

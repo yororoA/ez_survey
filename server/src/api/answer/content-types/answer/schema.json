@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "answers",
+  "info": {
+    "singularName": "answer",
+    "pluralName": "answers",
+    "displayName": "Answer"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "surveyId": {
+      "type": "string"
+    },
+    "clientId": {
+      "type": "string"
+    },
+    "answers": {
+      "type": "component",
+      "component": "answer.answer",
+      "repeatable": true
+    }
+  }
+}

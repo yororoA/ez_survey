@@ -1,0 +1,43 @@
+.entire {
+  font-size: 15rem;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.entire .backToHome {
+  position: absolute;
+  top: -15rem;
+  left: -10rem;
+  font-size: 12rem;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.entire header {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 18rem;
+}
+.entire .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem 0;
+}
+.entire button {
+  font-size: 9rem;
+  font-weight: 500;
+  width: 7vw;
+  height: 4.5vh;
+  box-sizing: content-box;
+  padding: 1rem 0;
+  border-radius: 6rem;
+  cursor: pointer;
+  background-color: var(--white-2);
+  margin: 0 auto;
+}
+.entire button:hover {
+  filter: invert(5%);
+}

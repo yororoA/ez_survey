@@ -1,0 +1,131 @@
+.entire {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to top, #f2f3f4 80%, transparent 80%);
+  font-size: 15rem;
+  position: relative;
+  height: 100%;
+}
+.entire button {
+  font-size: 9rem;
+  font-weight: 500;
+  width: 8vw;
+  height: 10vh;
+  box-sizing: border-box;
+  padding: 1rem 0;
+  border-radius: 6rem;
+  cursor: pointer;
+  background-color: #fefefe;
+  margin: 10rem;
+}
+.entire button:hover {
+  filter: invert(10%);
+}
+.entire .quesDisplayZone {
+  --radius: 12rem;
+  width: 95%;
+  background-color: transparent;
+  background-color: #fff;
+  overflow: auto;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  display: grid;
+  grid-template-rows: 9vh auto;
+  position: relative;
+}
+.entire .quesDisplayZone header {
+  background-color: #f9f9f9;
+  font-weight: 500;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 15rem;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+.entire .quesDisplayZone button {
+  color: black;
+  border: 1rem solid grey;
+  margin: 0;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+}
+.entire .quesDisplayZone input {
+  border: gray 1rem solid;
+  background-color: #fff;
+  width: 15vw;
+  height: 5vh;
+  box-sizing: border-box;
+  font-size: 8rem;
+  line-height: 5vh;
+  padding: 0 10rem;
+  border-radius: 5rem;
+}
+.entire .quesDisplayZone::-webkit-scrollbar {
+  display: none;
+}
+fieldset {
+  --fontsize: 12rem;
+  font-size: var(--fontsize);
+  position: relative;
+  min-height: 10vh;
+  margin: 0 10rem;
+}
+fieldset legend span {
+  opacity: 0.5;
+  margin-left: calc(var(--fontsize) * 0.3);
+}
+.optionsBox {
+  --gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap);
+  padding: var(--gap) 0;
+}
+.optionsBox .option {
+  min-width: 20vw;
+  height: calc(var(--fontsize) * 2);
+  border: 1rem solid gray;
+  padding: calc(var(--gap) * 0.5) calc(var(--gap) * 1.5);
+  border-radius: var(--gap);
+  display: flex;
+  align-items: center;
+  gap: calc(var(--gap) * 3);
+}
+.optionsBox .checked {
+  background-color: rgba(0, 0, 255, 0.05);
+  border-color: rgba(0, 0, 255, 0.3);
+  color: rgba(0, 0, 255, 0.6);
+}
+input[type='range'].slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  width: 20vw;
+  height: 15rem;
+  padding: 0 !important;
+  overflow: hidden;
+}
+input[type='range'].slider::-webkit-slider-runnable-track {
+  --progress: calc(var(--slide-value) * 100% / var(--total-value));
+  -webkit-appearance: none;
+  appearance: none;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 255, 0.6) var(--progress), rgba(128, 128, 128, 0.4) var(--progress));
+}
+input[type='range'].slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 5rem;
+  height: 100%;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 0 5rem 1rem black;
+  border-radius: 2rem;
+}

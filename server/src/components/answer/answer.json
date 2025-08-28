@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_answer_answers",
+  "info": {
+    "displayName": "answer"
+  },
+  "options": {},
+  "attributes": {
+    "answer": {
+      "type": "json"
+    },
+    "questionType": {
+      "type": "string"
+    },
+    "index": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}

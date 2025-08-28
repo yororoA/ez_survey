@@ -1,0 +1,14 @@
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* 放在 portal 里时，确保能接收点击，阻止穿透 */
+  pointer-events: auto;
+  /* 作为遮罩层，保证在 portal 子元素层级内位于上方 */
+  z-index: 1;
+}

@@ -1,0 +1,133 @@
+.entire {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to top, var(--linear-entire-bg-bottom) 70%, transparent 70%);
+  font-size: 15rem;
+
+  button {
+    font-size: 9rem;
+    font-weight: 500;
+    width: 8vw;
+    height: 4.5vh;
+    box-sizing: content-box;
+    padding: 1rem 0;
+    border-radius: 6rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--button-bg);
+  }
+
+
+  button:hover {
+    filter: invert(10%);
+  }
+
+  header {
+    --height:20vh;
+    --input-height:6vh;
+
+    width: 95%;
+    height: var(--height);
+    display: flex;
+    justify-content: space-between;
+
+    .summaries {
+      --gap: calc((var(--height) - var(--input-height) * 2) / 3);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: var(--gap);
+      margin: var(--gap) 0;
+
+      input {
+        border: none;
+        background-color: var(--sum-input-bg);
+        width: 15vw;
+        height: var(--input-height);
+        box-sizing: border-box;
+        font-size: 8rem;
+        line-height: 6vh;
+        padding: 0 10rem;
+        border-radius: 5rem;
+      }
+
+      input::placeholder {
+        color: var(--sum-input-placeholder);
+      }
+    }
+
+    .headerButtonBox {
+      margin-left: 20rem;
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      align-items: center;
+
+      button {
+        color: var(--save-draft-text);
+      }
+
+      .rightBtns {
+        display: flex;
+        height: 100%;
+        width: 27%;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .quesDisplayZone {
+    --radius: 12rem;
+
+    width: 95%;
+    background-color: transparent;
+    background-color: var(--ques-display-zone-bg);
+    overflow: auto;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    display: grid;
+    grid-template-rows: 9vh auto;
+
+
+    header {
+      background-color: var(--qDZ-header-bg);
+      font-weight: 500;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      padding-left: 15rem;
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+    }
+
+    button {
+      color: var(--qDZ-btn-text);
+      border: 1rem solid var(--qDZ-btn-border);
+      margin-bottom: 5rem;
+      margin-left: 5rem;
+    }
+
+    input {
+      border: var(--qDZ-input-border) 1rem solid;
+      background-color: var(--sum-input-bg);
+      width: 15vw;
+      height: 5vh;
+      box-sizing: border-box;
+      font-size: 8rem;
+      line-height: 5vh;
+      padding: 0 10rem;
+      border-radius: 5rem;
+    }
+  }
+
+  // 设置滚动条样式
+  .quesDisplayZone::-webkit-scrollbar {
+    display: none;
+  }
+}

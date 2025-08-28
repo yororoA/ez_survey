@@ -1,0 +1,64 @@
+:root{
+  --unFocus-nav-bg: #4588fb;
+  --unFocus-nav-text: white;
+  --focus-nav-bg: #fff;
+  --focus-nav-text: #4588fb;
+  --child-nav-bg: #d3d3d3;
+  --linear-entire-bg-bottom: #f2f3f4;
+  --button-bg: #fefefe;
+  --sum-input-bg: #fff;
+  --sum-input-placeholder: #cdcdcd;
+  --save-draft-text: white;
+  --ques-display-zone-bg: #fff;
+  --qDZ-header-bg: #f9f9f9;
+  --qDZ-btn-text: black;
+  --qDZ-btn-border: grey;
+  --qDZ-input-border: gray;
+  --draft-DZ-bg: rgb(223, 223, 223);
+  --draft-DZ-btnBox-bg: rgba(0, 0, 0, .1);
+  --draft-D-hoverInside:#ff7b31;
+  --entire-transparent: #e3e3e3;
+  --edit-preview-btnBox:rgba(0, 0, 0, .3);
+
+  /* normalized common palette */
+  --white: #fff;
+  --white-2: #fefefe;
+  --near-white-1: #f9f9f9;
+  --near-white-2: #fefffa;
+  --near-white-3: #fafeff;
+  --near-white-4: #f1dada;
+
+  --black: black;
+  --black-hex: #000000;
+
+  --gray-100: #f2f3f4;
+  --gray-200: #e3e3e3;
+  --gray-300: #d7d7d7;
+  --gray-400: #d3d3d3;
+  --gray-500: #cdcdcd;
+  --gray: gray;
+  --grey: grey;
+
+  --blue-500: #4588fb;
+  --blue-600: #387df6;
+  --blue-700: #2867c4;
+
+  --green-500: #59c5a3;
+  --orange-500: #ff7b31;
+
+  /* domain/status colors */
+  --status-ended: red;
+  --status-processing: lightgreen;
+
+  /* rgba / rgb / hsl used across modules */
+  --rgba-black-10: rgba(0, 0, 0, .1);
+  --rgba-black-30: rgba(0, 0, 0, .3);
+  --rgba-blue-5: rgba(0, 0, 255, .05);
+  --rgba-blue-30: rgba(0, 0, 255, .3);
+  --rgba-blue-60: rgba(0, 0, 255, .6);
+  --rgba-gray-40: rgba(128, 128, 128, .4);
+  --rgba-gray-50: rgba(128, 128, 128, .5);
+  --rgb-d4d3d3: rgb(212, 211, 211);
+  --rgb-241-218-218: rgb(241, 218, 218);
+  --hsl-0-0-93: hsl(0, 0%, 93%);
+}

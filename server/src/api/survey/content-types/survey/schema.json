@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "surveys",
+  "info": {
+    "singularName": "survey",
+    "pluralName": "surveys",
+    "displayName": "Survey"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "clientId": {
+      "type": "string"
+    },
+    "published": {
+      "type": "boolean"
+    },
+    "questions": {
+      "type": "json"
+    },
+    "answers": {
+      "type": "json"
+    },
+    "endCollection": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quests",
+  "info": {
+    "singularName": "quest",
+    "pluralName": "quests",
+    "displayName": "Question"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "required": {
+      "type": "boolean"
+    },
+    "options": {
+      "type": "json"
+    },
+    "max": {
+      "type": "integer"
+    },
+    "step": {
+      "type": "integer"
+    },
+    "surveyId": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "index": {
+      "type": "integer"
+    }
+  }
+}

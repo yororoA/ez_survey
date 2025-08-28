@@ -1,0 +1,94 @@
+.entire {
+  --width: 100vw;
+  --height: 95vh;
+  --hover-color: var(--gray-300);
+
+
+  // 首页
+  display: grid;
+  grid-template-rows: 40vh auto;
+  width: var(--width);
+  height: var(--height);
+  position: relative;
+
+  .edit {
+  --bgc-color-edit: var(--blue-600);
+
+    // 顶部头介绍
+    font-size: 25rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+  background-color: var(--bgc-color-edit);
+  color: var(--white);
+    font-weight: 600;
+
+    button {
+      --font-size: 20rem;
+  --color: var(--blue-700);
+
+      // 头介绍中跳转编辑按钮
+      font-size: var(--font-size);
+      padding: 10rem 30rem;
+      border-radius: calc(var(--font-size) + 10rem*2);
+  background-color: var(--white);
+      border: none;
+      cursor: pointer;
+      color: var(--color);
+
+      transition: all .22s;
+    }
+
+    button:hover {
+      // 按钮悬停
+      background-color: var(--hover-color);
+    }
+  }
+
+  .myCreation {
+    --bgc-color-myCreation: hsl(0, 0%, 93%);
+
+    // 底部 我创建的内容
+    background-color: var(--bgc-color-myCreation);
+    font-size: 20rem;
+    font-weight: 500;
+    display: grid;
+    grid-template-rows: 15vh auto;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 0 25rem;
+
+
+    .createdContent {
+      // 包裹内容块
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      box-sizing: border-box;
+      justify-content: space-between;
+      padding: 0 0 20rem 0;
+      height: 100%;
+
+      div {
+        // 每个内容块
+        box-sizing: border-box;
+        display: flex;
+        width: 28vw;
+
+        font-size: 16rem;
+  background-color: var(--white);
+        border-radius: 20rem;
+        padding: 10rem 0 0 15rem;
+
+        cursor: pointer;
+        transition: all .22s;
+      }
+      div:hover{
+        box-shadow: 0 0 10rem 10rem var(--hover-color);
+      }
+    }
+  }
+}

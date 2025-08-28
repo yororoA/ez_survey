@@ -1,0 +1,104 @@
+.entire {
+  // 工作台区域
+  display: grid;
+  // 与外层 globalBackage 布局的 95vh 内容区保持一致
+  height: 95vh;
+  grid-template-columns: 15vw auto;
+
+  // 让右侧内容区域自身滚动，避免整块容器滚动导致 sticky 失效体验
+  > :last-child {
+    height: 100%;
+    overflow: auto;
+  }
+
+  .navBox {
+    // 左侧导航栏区域
+    display: grid;
+    grid-template-rows: 15vh auto;
+    // 使用 sticky 固定在可视区域顶部
+    position: sticky;
+    top: 0;
+    // 避免在 grid 中被拉伸，确保吸附生效
+    align-self: start;
+
+    span.title {
+      // 工作台标识
+      font-size: 22rem;
+      font-weight: 500;
+      margin-left: 10rem;
+    }
+
+    span.backToHome{
+      position: absolute;
+      font-size: 10rem;
+      font-weight: 300;
+      opacity: .5;
+      cursor: pointer;
+      top: -20rem;
+      left: 5rem;
+    }
+
+    .navContent {
+      // 导航栏内容
+      display: flex;
+      flex-direction: column;
+      font-size: 12rem;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5rem;
+
+
+      div {
+        // 每个导航按钮
+        box-sizing: border-box;
+        width: 90%;
+        padding: 5rem 10rem;
+        border-radius: 5rem;
+        color: var(--unFocus-nav-text);
+        background-color: var(--unFocus-nav-bg);
+        font-weight: 300;
+        cursor: pointer;
+      }
+
+      div:hover {
+        filter: invert(10%);
+      }
+
+      .focus {
+        background-color: var(--focus-nav-bg);
+        color: var(--focus-nav-text);
+      }
+
+      .publishedBox {
+        display: flex;
+        text-align: center;
+        position: relative;
+        gap: 1rem;
+        top: -5rem;
+        overflow: hidden;
+
+        .childFocus {
+          position: relative;
+          color: var(--focus-nav-text);
+
+          animation: forwards publishedChildApear .1s;
+        }
+
+        div {
+          background-color: var(--child-nav-bg);
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes publishedChildApear {
+  from {
+    top: 0
+  }
+
+  to {
+    top: -3rem
+  }
+}

@@ -1,0 +1,19 @@
+.entire {
+  background-color: var(--blue-600);
+  position: relative;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 5vh 95vh;
+  align-items: center;
+}
+.entire .useless {
+  font-size: 15rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.entire .useless .displayUseless {
+  width: 20vw;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}

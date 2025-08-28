@@ -1,0 +1,59 @@
+.entire {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right top, var(--white) 20%, var(--blue-600));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+
+  .main {
+    width: 30%;
+    height: 50%;
+  background: linear-gradient(to right top, var(--white), transparent, var(--rgb-d4d3d3));
+    border-radius: 10rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+
+    header {
+      text-align: center;
+
+      span{
+        font-size: 8rem;
+        opacity: .5;
+      }
+    }
+
+    input{
+      width: 60%;
+      height: 12%;
+      border-radius: 20rem;
+  border: 1rem solid var(--rgba-gray-50);
+      font-size: 10rem;
+      box-sizing: border-box;
+      padding: 2rem 10rem;
+    }
+
+    button{
+      width: 60%;
+      height: 12%;
+      border-radius: 20rem;
+  border: 1rem solid var(--rgba-gray-50);
+      font-size: 10rem;
+      box-sizing: border-box;
+      padding: 2rem 10rem;
+      cursor: pointer;
+      border: none;
+    }
+
+    button:hover{
+      filter: invert(10%);
+      box-shadow: 0 0 1rem 1rem var(--gray);
+    }
+  }
+}
